@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000;
+    font-size: 15px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/****************************************Header****************************************/
+
+#ImagenPerfil img{
+    width: 20vh;
+    border-radius: 100%;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+}
+
+span:hover{
+    border-bottom: 2px solid white;
+}
+
+header img{
+    width: 3vh;
+}
+
+#PerfilHeader{
+    width: 100%;
+    text-align: center;
+}
+
+#PerfilHeader h2{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(106, 106, 106);
+}
+
+footer{
+    color: white;
+    display: flex;
+}
+
+header{
+    height: max-content;
+}
+
+/****************************************Inicio****************************************/
+
+#Inicio{
+    background-image: url(../img/Inicio/Inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    margin: 10px;
+}
+
+#TituloPrinipal{
+    padding: 25% 0;
+}
+
+#TituloPrinipal h1, #TituloPrinipal h2{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#TituloPrinipal h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#TituloPrinipal h2{
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 5px solid ;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    }
+    50% {
+        border-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    }
+}
+
+/****************************************Sobre Mi****************************************/
+
+#SobreMi{
+    height: 97vh;
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 17, 17), rgb(7, 7, 7));
+}
+
+#SobreMi article {
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: rgb(32, 81, 86);
+    transition: transform 0.3s ease;
+}
+
+#SobreMi article:hover {
+    transform: scale(1.05);
+    background-color: rgb(99, 163, 170);
+}
+
+#SobreMi article div{
+    display: block;
+    padding: 0 20px;
+}
+
+#SobreMi article div h3{
+    text-align: center;
+}
+
+#SobreMi article div p{
+    text-indent: 2rem;
+}
+
+#SobreMi article figure{
+    margin: auto 0;
+}
+
+#SobreMi article img{
+    width: 200px;
+    border-radius: 90%;
+}
+
+@media (min-width: 992px) {
+    .w-lg-100 {
+        width: 95% !important;
+    }
+}
+
+/****************************************Curriculum****************************************/
+#Curriculum {
+    height: 97vh;
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 17, 17), rgb(7, 7, 7));
+}
+
+#Curriculum figure {
+    max-height: 80vh; 
+    max-width: 80%;
+    overflow-y: auto;
+    margin: 0; 
+    border: 1px solid #ddd; 
+    margin: 20px auto;
+}
+
+#Curriculum img {
+    width: 100%; 
+    display: block;
+}
+
+/****************************************Portafolio****************************************/
+#Portafolio{
+    height: 100%;
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 17, 17), rgb(7, 7, 7));
+}
+
+#Portafolio a{
+    text-decoration: none;
+    width: 300px;
+    color: rgb(149, 236, 255);
+}
+
+#Portafolio a article{
+    width: 300px;
+    max-height: min-content;
+    border: solid 1px white;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgba(76, 76, 76, 0.607);
+}
+
+#Portafolio article figure img{
+    width: 45%;
+}
+
+#Portafolio article:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    background-color: rgb(255, 127, 127);
+}
+
+/****************************************Contacto****************************************/
+#Contacto{
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 17, 17), rgb(7, 7, 7));
+}
+
+#Contacto a{
+    width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+#Contacto a article{
+    width: 300px;
+    max-height: min-content;
+    border: solid 1px white;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgb(71, 87, 88);
+}
+
+#Contacto article img{
+    width: 45%;
+}
+
+#Contacto article:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .custom-xl-center {
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
