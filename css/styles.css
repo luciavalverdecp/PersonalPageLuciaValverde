@@ -19,7 +19,7 @@ h2 {
 /****************************************Header****************************************/
 
 #ImagenPerfil img{
-    width: 20vh;
+    width: 25vh;
     border-radius: 100%;
 }
 
@@ -117,7 +117,7 @@ header{
 }
 
 #SobreMi article:hover {
-    transform: scale(1.05);
+    transform: scale(1.03); 
     background-color: rgb(99, 163, 170);
 }
 
