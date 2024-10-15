@@ -7,6 +7,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #000000;
     font-size: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 h2 {
@@ -15,6 +17,29 @@ h2 {
     font-size: 3rem;
 }
 
+
+@media (min-width: 1500px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    main {
+        height: 100vh;
+    }
+    
+    #Pagina > div {
+        min-height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+}
 
 /****************************************Header****************************************/
 
@@ -63,7 +88,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 97vh;
+    height: 95vh;
     margin: 10px;
 }
 
@@ -109,16 +134,27 @@ header{
     background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 17, 17), rgb(7, 7, 7));
 }
 
-#SobreMi article {
-    border: solid 1px white;
-    border-radius: 20px;
-    background-color: rgb(32, 81, 86);
-    transition: transform 0.3s ease;
+@media (min-width: 992px) {
+    #SobreMi article {
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: rgb(32, 81, 86);
+        transition: transform 0.3s ease;
+    }
+    
+    #SobreMi article:hover {
+        transform: scale(1.03); 
+        background-color: rgb(99, 163, 170);
+    }
 }
 
-#SobreMi article:hover {
-    transform: scale(1.03); 
-    background-color: rgb(99, 163, 170);
+@media (max-width: 992px) {
+    #SobreMi article {
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: rgb(99, 163, 170);
+        transition: transform 0.3s ease;
+    }
 }
 
 #SobreMi article div{
